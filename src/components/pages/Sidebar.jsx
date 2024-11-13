@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   const [activeSegment, setActiveSegment] = useState("product");
+  
 
   const sidebardata = [
     {
