@@ -1,0 +1,261 @@
+.login-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100%;
+  background-color: #e9e9e9d6;
+  /* background-image: url(/src/components/assets/images/login-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.main-logo {
+  z-index: 1;
+  padding: 30px 0px 0px 30px;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.login-heading {
+  color: #E03B30;
+  font-weight: 600;
+  font-family: 'Jost', sans-serif;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-subtitle {
+  color: #8b8b8b;
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 50px;
+}
+
+.login-input {
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 6px;
+  border: 1px solid #2c2c2c;
+  margin: 15px 0px;
+  padding-left: 35px;
+}
+
+.forget-password {
+  color: #007bc5;
+  text-decoration: none;
+  float: inline-end;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.forget-password:hover {
+  color: #005081;
+}
+
+.login-left {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.login-right {
+  padding: 60px 40px;
+  margin: 40px;
+  background-color: white;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 30px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.error-message {
+  color: #ff0000;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 10px;
+  top: 48%;
+  transform: translateY(-50%);
+  color: #202020;
+  pointer-events: none;
+}
+
+
+.input-icon svg {
+  font-size: 16px;
+  color: #565656;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 48%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #202020;
+}
+
+.toggle-password svg {
+  font-size: 18px;
+}
+
+.login-btn {
+  width: 100%;
+  border-radius: 6px;
+  padding: 10px 10px;
+  border: 1px solid transparent;
+  background-color: #E03B30;
+  color: white;
+  font-weight: 500;
+  margin-top: 40px;
+  display: inline-block;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.login-btn:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e03b30;
+  z-index: -2;
+}
+
+.login-btn:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -12px;
+  width: 0%;
+  height: 100%;
+  background-color: #f8f8f8;
+  transition: all 0.3s;
+  z-index: -1;
+  transform: skew(30deg);
+}
+
+.login-btn:hover {
+  color: #080808;
+}
+
+.login-btn:hover:before {
+  width: 110%;
+}
+
+.forget-input {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid #838383;
+}
+
+.forget-btn {
+  width: 50%;
+  border-radius: 5px;
+  padding: 8px 8px;
+  border: 1px solid transparent;
+  background-color: #E03B30;
+  color: white;
+  font-weight: 500;
+  margin-top: 35px;
+  display: block;
+  float: right;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.login-image {
+  width: 600px;
+  height: 600px;
+}
+
+
+@media only screen and (max-width:525px) {
+  .login-image {
+    width: auto;
+    height: auto;
+  }
+
+  .login-container {
+    display: block;
+  }
+
+  .login-page {
+    height: auto;
+  }
+
+  .login-right {
+    padding: 30px 30px;
+    margin: 20px;
+  }
+
+  .login-subtitle {
+    margin-bottom: 20px;
+  }
+
+  .login-btn {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 526px) and (max-width: 767px) {
+  .login-image {
+    width: 65%;
+    height: auto;
+    margin: auto;
+  }
+
+  .login-container {
+    display: block;
+  }
+
+  .login-page {
+    height: auto;
+  }
+
+  .login-right {
+    padding: 70px 70px;
+    margin: 60px;
+  }
+
+  .login-subtitle {
+    margin-bottom: 40px;
+  }
+
+  .login-btn {
+    margin-top: 40px;
+  }
+}
+
+
+@media screen and (min-width:768px) and (max-width:1200px) {
+  .login-image {
+    width: 90%;
+  }
+
+  .login-page {
+    height: auto;
+  }
+}

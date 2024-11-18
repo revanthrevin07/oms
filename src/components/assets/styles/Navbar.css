@@ -1,0 +1,22 @@
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.navlink svg {
+  font-size: 25px;
+  color: #3a3a3a;
+}
+
+.navbar-alignment {
+  padding: 5px 25px !important;
+}
+
+.navlink {
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.main-navbar {
+  border-bottom: 2px solid rgba(183, 183, 183, 0.808);
+}

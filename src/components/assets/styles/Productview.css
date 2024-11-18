@@ -1,0 +1,128 @@
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.create-btn {
+  border-radius: 5px;
+  border: none;
+  padding: 8px 24px;
+  background-color: #E03B30;
+  color: white;
+  font-weight: 500;
+  outline: none;
+}
+
+.create-btn:hover {
+  background-color: #c70d00;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6e6e6e;
+  pointer-events: none;
+}
+
+.update-product {
+  border-radius: 5px;
+  box-shadow: rgb(0 0 0 / 30%) 0px 1px 2px 0px, rgb(0 0 0 / 15%) 0px 1px 3px 1px;
+}
+
+.search-box {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ababab;
+  padding: 8px 15px;
+}
+
+.filter-section {
+  display: flex;
+  gap: 25px;
+  padding-top: 20px;
+}
+
+.filter-section select {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ababab;
+  padding: 8px 15px;
+  color: #5c5c5c;
+  cursor: pointer;
+  appearance: none;
+}
+
+.search-box-container {
+  position: relative;
+}
+
+
+.search-section {
+  padding: 30px 30px;
+}
+
+.filter-section select option {
+  background-color: #fff;
+  padding: 10px 10px;
+  color: #5e5e5e;
+}
+
+.custom-select-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.custom-arrow-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #888;
+}
+
+.product-list {
+  display: block;
+  cursor: pointer;
+}
+
+.product-list .product-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  border-bottom: 1px solid #ededed;
+}
+
+.table-heading {
+  background-color: #e5e5e5;
+  padding: 20px 25px;
+  cursor: pointer;
+}
+
+.product-item td {
+  padding: 15px 25px;
+  cursor: pointer;
+}
+
+.product-item {
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.product-item:hover {
+  background-color: #f3f3f3cb;
+  transition: 0.2s linear all;
+}
+
+.pagination-align {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
