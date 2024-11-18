@@ -78,7 +78,6 @@ const UpdateProduct = ({ activeSegment, setActiveSegment }) => {
             if (response.ok) {
                 toast.success('Product updated successfully', { position: 'top-center' });
                 setTimeout(() => {
-                    // fetchproducts();
                     navigate('/products/update', { state: { product: productData } });
                 }, 2000);
             } else {
