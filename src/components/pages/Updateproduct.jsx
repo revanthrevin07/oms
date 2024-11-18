@@ -13,6 +13,7 @@ const Updateproduct = ({ activeSegment, setActiveSegment }) => {
 
     const product = location.state?.product || {};
     const [imageUrl, setImageUrl] = useState(null);
+    
 
     useEffect(() => {
         if (product?.imageId) {
