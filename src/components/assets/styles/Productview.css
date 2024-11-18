@@ -32,6 +32,7 @@
 .update-product {
   border-radius: 5px;
   box-shadow: rgb(0 0 0 / 30%) 0px 1px 2px 0px, rgb(0 0 0 / 15%) 0px 1px 3px 1px;
+  border: 1px solid #c1c1c1;
 }
 
 .search-box {
