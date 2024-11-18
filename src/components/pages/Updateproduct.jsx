@@ -5,7 +5,7 @@ import { IoArrowBackOutline } from "react-icons/io5";
 import { IoMdArrowDropdown } from "react-icons/io";
 import CustomNavbar from '../common/Navbar';
 import Sidebar from './Sidebar';
-import { useNavigate, useLocation, useMemo } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const Updateproduct = ({ activeSegment, setActiveSegment }) => {
     const location = useLocation();
@@ -13,7 +13,7 @@ const Updateproduct = ({ activeSegment, setActiveSegment }) => {
 
     const product = location.state?.product || {};
     const [imageUrl, setImageUrl] = useState(null);
-    
+
 
     useEffect(() => {
         if (product?.imageId) {
